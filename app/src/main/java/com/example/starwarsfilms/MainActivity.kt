@@ -2,6 +2,7 @@ package com.example.starwarsfilms
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
@@ -13,10 +14,12 @@ class MainActivity : AppCompatActivity() {
         val binding: ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.bottomNavigationView.setupWithNavController(NavHostFragment.findNavController())
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
+
+        binding.bottomNavigationView.setupWithNavController(NavHostFragment.findNavController(navHostFragment))
+
 
 
     }
-
-
 }
