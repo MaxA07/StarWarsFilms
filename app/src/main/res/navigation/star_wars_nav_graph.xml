@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/filmListFragment"
-        android:name="com.example.starwarsfilms.screens.FilmListFragment"
+        android:name="com.example.starwarsfilms.ui.screens.FilmListFragment"
         android:label="fragment_films_list"
         tools:layout="@layout/fragment_films_list" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/favoriteFragment"
-        android:name="com.example.starwarsfilms.screens.FavoriteFragment"
+        android:name="com.example.starwarsfilms.ui.screens.FavoriteFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.starwarsfilms.screens.SearchFragment"
+        android:name="com.example.starwarsfilms.ui.screens.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/filmDetailsFragment"
-        android:name="com.example.starwarsfilms.screens.FilmDetailsFragment"
+        android:name="com.example.starwarsfilms.ui.screens.FilmDetailsFragment"
         android:label="fragment_film_details"
         tools:layout="@layout/fragment_film_details" />
 </navigation>
